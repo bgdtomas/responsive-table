@@ -57,16 +57,6 @@ table {
   overflow: auto;
 }
 
-/*
-button{
-  border: none;
-}
-
-button:focus {
-  outline: rgb(0, 0, 0) auto 5px;
-}
-*/
-
 button {
   border: 1px solid rgba(0, 0, 0, 0.205);
   border-radius: 0px 3px 3px 0px;
@@ -121,6 +111,19 @@ th {
   color: #ffffff;
 }
 
+.approved2:hover {
+  background-color: #00a65b93;
+}
+.pending1:hover {
+  background-color: #ffa920a4;
+}
+.approved3:hover {
+  background-color: #3c8dbc8e;
+}
+.denied1:hover {
+  background-color: #dd4c3985;
+}
+
 @media (max-width: 600px) {
   :root {
     --width: 150px;
@@ -132,13 +135,15 @@ th {
     grid-template-columns: 1fr;
   }
 
-  .header{
+  .header {
     text-align: center;
   }
 
-  .searchbar{
+  .searchbar {
     grid-row: 2;
   }
 
-
+  button {
+    width: 80px;
+  }
 }
