@@ -1,75 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Table</title>
-    <link rel="stylesheet" href="responsive-table.css" />
-    <link rel="stylesheet" href="/Resources/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-        <header class="header">Responsive Hover Table</header>
-        <div class="searchbar">
-          <input type="text" placeholder="Search" />
-          <button><i class="fas fa-search"></i></button>
-        </div>
 
-      <table class="table_container">
-        <tr class="table_header">
-          <th>Id</th>
-          <th>User</th>
-          <th>Date</th>
-          <th>Status</th>
-          <th>Reason</th>
-        </tr>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Table</title>
+  <link rel="stylesheet" href="responsive-table.css" />
+  <link rel="stylesheet" href="Resources/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
 
-        <tr class="approved2">
-          <td>183</td>
-          <td>John Doe</td>
-          <td>11-7-2014</td>
-          <td ><span class="approved1">Approved</span></td>
-          <td>
-            Bacon ipsum dolor sit amet salami venison chicken flank fatback
-            doner.
-          </td>
-        </tr>
-
-        <tr class="pending1">
-          <td>219</td>
-          <td>Alexander Pierce</td>
-          <td>11-7-2014</td>
-          <td ><span class="pending">Pending</span></td>
-          <td>
-            Bacon ipsum dolor sit amet salami venison chicken flank fatback
-            doner.
-          </td>
-        </tr>
-
-        <tr class="approved3">
-          <td>657</td>
-          <td>Bob Doe</td>
-          <td>11-7-2014</td>
-          <td ><span class="approved">Approved</span></td>
-          <td>
-            Bacon ipsum dolor sit amet salami venison chicken flank fatback
-            doner.
-          </td>
-        </tr>
-
-        <tr class="denied1">
-          <td>175</td>
-          <td>Mike Doe</td>
-          <td>11-7-2014</td>
-          <td ><span class="denied">Denied</span></td>
-          <td>
-            Bacon ipsum dolor sit amet salami venison chicken flank fatback
-            doner.
-          </td>
-        </tr>
-      </table>
+<body>
+  <div class="container">
+    <header class="header">Responsive Hover Table</header>
+    <div class="searchBar">
+      <input type="text" placeholder="Search" />
+      <button><i class="fas fa-search"></i></button>
     </div>
-  </body>
+
+    <table class="tableContainer">
+      <tr class="tableHeader">
+        <th>Id</th>
+        <th>User</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Reason</th>
+      </tr>
+
+      <tr class="approvedRow">
+        <td>183</td>
+        <td>John Doe</td>
+        <td>11-7-2014</td>
+        <td><span class="status approvedGreen">Approved</span></td>
+        <td>
+          Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.
+        </td>
+      </tr>
+
+      <tr class="reason approvedGreenReason">
+        <td colspan="4" class="reasonData">
+          Reason
+        </td>
+      </tr>
+
+      <tr  class="reason">
+        <td colspan="4" class="reasonTableData approvedGreenReason">
+          Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.
+        </td>
+      </tr>
+
+      <tr class="pendingRow">
+        <td>219</td>
+        <td>Alexander Pierce</td>
+        <td>11-7-2014</td>
+        <td><span class="status pendingYellow">Pending</span></td>
+        <td>
+          Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.
+        </td>
+      </tr>
+
+      <tr class="reason pendingYellowReason">
+        <td colspan="4" class="reasonData">
+          Reason
+        </td>
+      </tr>
+
+      <tr  class="reason">
+        <td colspan="4" class="reasonTableData pendingYellowReason">
+          Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.
+        </td>
+      </tr>
+
+      <tr class="approvedRowBlue">
+        <td>657</td>
+        <td>Bob Doe</td>
+        <td>11-7-2014</td>
+        <td><span class="status approvedBlue">Approved</span></td>
+        <td>
+          Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.
+        </td>
+      </tr>
+
+      <tr class="reason approvedBlueReason">
+        <td colspan="4" class="reasonData">
+          Reason
+        </td>
+      </tr>
+
+      <tr  class="reason">
+        <td colspan="4" class="reasonTableData approvedBlueReason">
+          Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.
+        </td>
+      </tr>
+
+      <tr class="deniedRow">
+        <td>175</td>
+        <td>Mike Doe</td>
+        <td>11-7-2014</td>
+        <td><span class="status deniedRed">Denied</span></td>
+        <td>
+          Bacon ipsum dolor sit amet salami venison chicken flank fatback
+          doner.
+        </td>
+
+        <tr class="reason deniedRedReason">
+          <td colspan="4" class="reasonData">
+            Reason
+          </td>
+        </tr>
+  
+        <tr  class="reason">
+          <td colspan="4" class="reasonTableData deniedRedReason">
+            Bacon ipsum dolor sit amet salami venison chicken flank fatback
+            doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+            doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+            doner.Bacon ipsum dolor sit amet salami venison chicken flank fatback
+            doner.
+          </td>
+        </tr>
+        
+        
+      </tr>
+    </table>
+  </div>
+</body>
+
 </html>
